@@ -1,0 +1,36 @@
+.item-cell{
+    background-color: #fff;
+    margin:12rpx 12rpx 10rpx 12rpx;
+    padding:20rpx 14rpx;
+    border:1rpx solid #dddcdc;
+    border-radius: 5px;
+}
+
+.title{
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10rpx;
+}
+
+.item-content-multimedia{
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.item-content-multimedia image{
+    display: inline-block;
+    max-width: 100%;
+    /*height: auto;*/
+}
+.item-content-multimedia video{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    min-width: 70%;
+}
+
+.item-content-multimedia audio{
+    display: inline-block;
+    width: 100%;
+}

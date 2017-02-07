@@ -1,0 +1,14 @@
+<import src="itemCell.wxml" />
+
+<scroll-view class="scrollView" scroll-y="{{isViewScroll}}" >
+    <block wx:for="{{allDataList}}" wx:for-item="item" >
+        <template is="itemCell" data="{{item}}" />
+    </block>
+</scroll-view>
+<scroll-view style="display:{{imgBigViewShow}}" class="pic-show-pop" scroll-y="true" bindtap="hideBigImg">
+    <block>
+        <view class="big-pic" >
+            <image src="{{imgBigSrc}}"  mode="widthFix" style="width:{{imgBigW}}rpx;"></image>
+        </view>
+    </block>
+</scroll-view>

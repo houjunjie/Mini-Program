@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/baisi/baisi",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#353535",
+    "selectedColor":"#1AAD16",
+    "backgroundColor":"#fff",
+    "position":"bottom",
+    "borderStyle":"white",
+    "list":[{
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },{
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }]
+  }
+}

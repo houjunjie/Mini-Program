@@ -1,0 +1,26 @@
+<template name="itemCell">
+    <view class="item-cell">
+
+        <view class="top">
+            <view class="">
+                <text class="title">{{item.text}}</text>
+            </view>
+        </view>
+
+        <view class="item-content">
+            <!-- 图片 -->
+            <view class="item-content-multimedia" hidden="{{item.image1 && (!item.videouri && !item.voiceuri) ? false : true}}" >
+                <image bindtap="showBigImg" data-src="{{item.image1}}" data-width="{{item.width}}" data-height="{{item.height}}" src="{{item.image1}}" mode="top" style="width:{{item.width}}rpx;"></image>
+            </view>
+            <!--视频-->
+            <view class="item-content-multimedia" hidden="{{item.videouri ? false : true}}">
+                <video id="{{item.id}}" src="{{item.videouri}}" bindplay="videoPlay" bindended="videoEnd" catchTap="tapVideo" controls style="width:{{item.width}}rpx;height:{{item.height}}rpx;"></video>
+            </view>
+
+            <!--音频-->
+            <view class="item-content-multimedia" hidden="{{item.voiceuri ? false : true}}">
+                <audio id="{{item.id}}" src="{{item.voiceuri}}" poster="{{item.bimageuri}}" author="{{item.screen_name}}" bindplay="audioPlay" bindeneded="audioEnd"></audio>
+            </view>
+        </view>
+    </view>
+</template>
